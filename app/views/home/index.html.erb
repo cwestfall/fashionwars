@@ -1,0 +1,31 @@
+<% for entry in @current_entries %>
+  <div class="entry">
+    <%= image_tag entry.photo.url(:medium) %>
+      <div class="todays_votes"><%= pluralize(entry.votes.count, 'vote') %> today</div>
+    </ol>
+    <p>
+      <% if user_signed_in? %>
+        <%= link_to "Vote for #{entry.contestant.first_name}", votes_path('vote[contestant_entry_id]' => entry.id), :method => :post unless current_user.voted_today? %>
+      <% elsif %>
+        <%= link_to 'Sign In', new_user_session_path%> <%= "to vote for #{entry.contestant.first_name}" %>
+      <% end %>
+    </p>
+  </div>    
+<% end %>
+
+<div id="leaderboard">
+  <table class="leaderboard">
+    <caption>Leaderboard</caption>
+    <tr>
+      <th>Fashonista</th>
+      <th>Score</th>
+    </tr>
+  <% for contestant in @contestants %>
+    <tr>
+      <td><%= contestant.full_name %></td>
+      <td><%= contestant.score %></td>
+    </tr>
+  <% end %>
+  </table>
+</div>
+

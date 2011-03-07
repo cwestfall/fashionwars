@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @contestant_entry.date %>
+</p>
+
+<p>
+  <b>Contestant:</b>
+  <%= @contestant_entry.contestant.full_name %>
+</p>
+
+<p>
+  <b>Photo:</b>
+  <%= image_tag @contestant_entry.photo.url %>
+</p>
+
+<%= link_to 'Edit', edit_contestant_entry_path(@contestant_entry) %> |
+<%= link_to 'Back', contestant_entries_path %>

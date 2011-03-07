@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First Name:</b>
+  <%= @contestant.first_name %>
+</p>
+
+<p>
+  <b>Last Name:</b>
+  <%= @contestant.last_name %>
+</p>
+
+<p>
+  <b>Score:</b>
+  <%= @contestant.score %>
+</p>
+
+<%= link_to 'Edit', edit_contestant_path(@contestant) %> |
+<%= link_to 'Back', contestants_path %>

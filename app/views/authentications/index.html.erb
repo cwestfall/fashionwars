@@ -1,0 +1,30 @@
+<table>
+  <tr>
+    <th>User</th>
+    <th>Provider</th>
+    <th>Uid</th>
+  </tr>
+<% if !@authentications.nil? %>  
+  <% for authentication in @authentications %>
+    <tr>
+      <td><%= authentication.user_id %></td>
+      <td><%= authentication.provider %></td>
+      <td><%= authentication.uid %></td>
+      <td><%= link_to "Destroy", authentication, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+<% end %>
+</table>
+
+<a href="/auth/twitter" class="auth_provider">
+  <%= image_tag "authbuttons/twitter_64.png", :title => "Twitter", :alt => "Twitter", :size => "64x64" %>
+</a>
+
+<a href="/auth/facebook" class="auth_provider">
+  <%= image_tag "authbuttons/facebook_64.png", :title => "Facebook", :alt => "Facebook", :size => "64x64" %>
+</a>
+
+<a href="/auth/linkedin" class="auth_provider">
+  <%= image_tag "authbuttons/linkedin_64.png", :title => "Linked In", :alt => "Linked In", :size => "64x64" %>
+</a>
+

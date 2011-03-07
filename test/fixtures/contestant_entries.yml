@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date: 2011-03-05
+  vote_id: 1
+  contestant_id: 1
+
+two:
+  date: 2011-03-05
+  vote_id: 1
+  contestant_id: 1

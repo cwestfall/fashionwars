@@ -1,0 +1,30 @@
+
+<div id="third_party_auth">
+  <h2>Sign in with Facebook!</h2>
+  <div>Already have a Facebook account? Just click the Facebook logo below:</div>
+  <div>
+    <a href="/auth/facebook" class="auth_provider">
+      <%= image_tag "authbuttons/facebook_64.png", :title => "Facebook", :alt => "Facebook", :size => "64x64", :border => 0 %>
+    </a>
+  </div>
+  
+</div>
+
+<div id="sign_in_form">
+  <h2>No Facebook? Sign in<span> or <%= link_to 'Sign Up', new_user_registration_path %></span></h2>
+  <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+    <p><%= f.label :email %><br />
+    <%= f.text_field :email %></p>
+
+    <p><%= f.label :password %><br />
+    <%= f.password_field :password %></p>
+
+    <% if devise_mapping.rememberable? -%>
+      <p><%= f.check_box :remember_me %> <%= f.label :remember_me %></p>
+    <% end -%>
+
+    <p><%= f.submit "Sign in" %></p>
+  <% end %>
+
+  <%= render :partial => "devise/shared/links" %>
+</div>

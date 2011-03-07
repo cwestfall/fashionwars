@@ -1,0 +1,101 @@
+html, body {
+  margin:0;
+  padding:0;
+  background-color:#000;
+}
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: .9em;
+}
+
+a { color: #CC6600; text-decoration:none; }
+a:visited { color: #666; }
+a:hover { text-decoration:underline; }
+
+
+#wrapper {
+  background-color:#FFF;
+  width:786px;
+  margin:auto;
+  padding:10px 0 10px 20px;
+}
+
+#header h1 {
+  margin:0;
+  float:left;
+}
+
+#authentication_actions {
+  float:right;
+  padding:13px 20px 0 0;
+}
+
+#notifications {
+  clear:both;
+}
+
+#content {
+  clear:both;
+}
+
+#footer {
+  clear:both;
+  padding-top:20px;
+}
+
+div.todays_votes {
+  text-align:right;
+  padding:.25em .5em;
+}
+
+#leaderboard {
+  float:left;
+  width:240px;
+}
+
+div.entry {
+  float:left;
+  margin:20px 20px 0 0;
+  width:240px;
+  border:1px solid black;
+}
+
+div.entry p {
+  text-align:center;
+}
+
+table.leaderboard {
+  width:100%;
+  margin:12px 0 0 0;
+}
+
+table.leaderboard caption {
+  text-align:left; 
+  font-size:2em;
+  font-style:bolder;
+  margin-bottom:10px;
+}
+
+table.leaderboard th {
+  text-align:left;
+}
+
+#third_party_auth {
+  width:325px;
+  float:left;
+}
+
+#sign_in_form {
+  margin-left:40px;
+  width:375px;
+  float:left;
+}
+
+#sign_in_form h2 span {
+  font-size:.6em;
+}
+
+#notifications {text-align:center;padding-top:10px;}
+#notifications .notice {color:green;}
+#notifications .alert {color:red;}
