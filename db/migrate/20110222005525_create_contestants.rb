@@ -3,7 +3,7 @@ class CreateContestants < ActiveRecord::Migration
     create_table :contestants do |t|
       t.string :first_name, :null => false
       t.string :last_name, :null => false
-      t.decimal :score, :default => 0, :percision => 8, :scale => 2
+      t.decimal :score, :precision => 10, :scale => 2
       t.text :bio
       t.timestamps
     end
