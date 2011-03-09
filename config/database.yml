@@ -16,7 +16,7 @@ test:
   timeout: 5000
 
 production:
-  adapter: mysql
+  adapter: mysql2
   host: global-ecommerce.cd4ps8pxka32.us-east-1.rds.amazonaws.com
   reconnect: false
   database: fashionwars
