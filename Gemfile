@@ -10,6 +10,7 @@ gem 'devise'
 gem 'nifty-generators'
 gem 'omniauth'
 gem "paperclip", "~> 2.3"
+gem "mysql2"
 
 # Use unicorn as the web server
 # gem 'unicorn'
