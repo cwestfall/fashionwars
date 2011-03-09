@@ -12,7 +12,7 @@
 
 <p>
   <b>Photo:</b>
-  <%= image_tag @contestant_entry.photo.url %>
+  <%= image_tag @contestant_entry.photo.url(:xl) %>
 </p>
 
 <%= link_to 'Edit', edit_contestant_entry_path(@contestant_entry) %> |
