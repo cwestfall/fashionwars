@@ -12,7 +12,7 @@ role :app, "fashionwars.ihg-ecommerce.com"                          # This may b
 role :db,  "fashionwars.ihg-ecommerce.com", :primary => true        # This is where Rails migrations will run
 
 # server details
-#default_run_options[:pty] = true 
+default_run_options[:pty] = true 
 set :rails_env, "production"
 set :deploy_to, "/var/www/html/fashionwars"
 set :deploy_via, :remote_cache
