@@ -14,7 +14,7 @@
   <tr>
     <td><%= contestant.first_name %></td>
     <td><%= contestant.last_name %></td>
-    <td><%= contestant.score %></td>
+    <td><%= number_with_precision(contestant.score, :precision => 2) %></td>
     <td><%= link_to 'Show', contestant %></td>
     <td><%= link_to 'Edit', edit_contestant_path(contestant) %></td>
     <td><%= link_to 'Destroy', contestant, :confirm => 'Are you sure?', :method => :delete %></td>
