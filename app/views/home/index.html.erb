@@ -23,7 +23,7 @@
   <% for contestant in @contestants %>
     <tr>
       <td><%= contestant.full_name %></td>
-      <td><%= number_with_precision(contestant.score, :precision => 2 %></td>
+      <td><%= number_with_precision(contestant.score, :precision => 2) %></td>
     </tr>
   <% end %>
   </table>
