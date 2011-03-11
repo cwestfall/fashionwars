@@ -4,6 +4,7 @@
   <tr>
     <th>Date</th>
     <th>Contestant</th>
+    <th>Votes</th>
     <th>Photo</th>
     <th></th>
     <th></th>
@@ -13,6 +14,7 @@
   <tr>
     <td><%= contestant_entry.date %></td>
     <td><%= contestant_entry.contestant.full_name %></td>
+    <td><%= contestant_entry.votes.count %></td>
     <td><%= image_tag contestant_entry.photo.url(:thumb) %></td>
     <td><%= link_to 'Show', contestant_entry %></td>
     <td><%= link_to 'Edit', edit_contestant_entry_path(contestant_entry) %></td>

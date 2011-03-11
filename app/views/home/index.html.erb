@@ -1,6 +1,6 @@
 <% for entry in @current_entries %>
   <div class="entry">
-    <a href="<%= entry.photo.url(:large) %>"><%= image_tag entry.photo.url(:medium) %></a>
+    <a href="<%= entry.photo.url(:large) %>"><%= image_tag entry.photo.url(:medium), :border => 0 %></a>
       <div class="todays_votes"><%= pluralize(entry.votes.count, 'vote') %> today</div>
     </ol>
     <p>

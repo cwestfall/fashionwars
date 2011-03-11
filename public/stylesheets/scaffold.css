@@ -1,7 +1,9 @@
 html, body {
   margin:0;
   padding:0;
-  background-color:#000;
+  background-color:#D74119;
+  background-image:url('/images/background.png');
+  background-repeat:repeat-x;
 }
 
 body, p, ol, ul, td {
@@ -21,9 +23,12 @@ a:hover { text-decoration:underline; }
   padding:10px 0 10px 20px;
 }
 
-#header h1 {
+#header #logo {
   margin:0;
-  float:left;
+  padding:0;
+  height:134px;
+  background-image:url('/images/header.png');
+  background-repeat:no-repeat;
 }
 
 #authentication_actions {

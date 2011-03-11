@@ -11,7 +11,7 @@
 <body onload="setupZoom()">
   <div id="wrapper">
     <div id="header">
-      <h1>Fashion Wars</h1>
+      <div id="logo"></div>
       <div id="authentication_actions">
         <% if user_signed_in? %>
           Signed in as <%= current_user.email %>  Not you? <%= link_to "Sign Out", destroy_user_session_path %>
